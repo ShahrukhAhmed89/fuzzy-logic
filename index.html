@@ -6,38 +6,38 @@
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Monda" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <title>Fuzzy Logic - Recommending Dress Sizes</title>
+    <title>Fuzzy Logic</title>
 </head>
 <body>
     <div id="container">
         <div class="product-image">
             <div class="image-main">
-                <img src="static/prod_f.jpg" alt="">
+                <img src="/static/prod_f.jpg" alt="">
             </div>
             <div class="image-aside">
-                <img src="static/prod_f.jpg" alt="">
+                <img src="/static/prod_f.jpg" alt="">
             </div>
             <div class="image-aside">
-                <img src="static/prod_d.jpg" alt="">
+                <img src="/static/prod_d.jpg" alt="">
             </div>
             <div class="image-aside">
-                <img src="static/prod_b.jpg" alt="">
+                <img src="/static/prod_b.jpg" alt="">
             </div>
             <div class="image-aside">
-                <img src="static/prod_s.jpg" alt="">
+                <img src="/static/prod_s.jpg" alt="">
             </div>
         </div>
         <div class="product-details">
             <div class="sliders">
-                <label for="Collar" class="label_collar">Collar ( {{userSize.collar}} )</label>
+                <!-- <label for="Collar" class="label_collar">Collar ( {{userSize.collar}} )</label> -->
                 <label for="Shoulder" class="label_shoulder">Shoulder ( {{userSize.shoulder}} )</label>
                 <label for="Chest" class="label_chest">Chest ( {{userSize.chest}} )</label>
                 <label for="Waist" class="label_waist">Waist ( {{userSize.waist}} )</label>
 
-                <input v-model="userSize.collar" type="range" min="35" max="44" id="Collar">
-                <input v-model="userSize.shoulder" type="range" min="38" max="48" id="Shoulder">
-                <input v-model="userSize.chest" type="range" min="90" max="114" id="Chest">
-                <input v-model="userSize.waist" type="range" min="40" max="56"  id="Waist">
+                <!-- <input v-model="userSize.collar" type="range" min="35" max="44" id="Collar"> -->
+                <input v-model.number="userSize.shoulder" type="range" min="38" max="48" id="Shoulder">
+                <input v-model.number="userSize.chest" type="range" min="90" max="114" id="Chest">
+                <input v-model.number="userSize.waist" type="range" min="40" max="56"  id="Waist">
                 <!-- <div class="slider">
                     <label for="volume">Collar</label>
                     <input type="range" min="1" max="100" value="50">
@@ -76,9 +76,9 @@
                     <button :class="{ active: recommendedSize=='large' }">L</button>
                     <button :class="{ active: recommendedSize=='xLarge' }">XL</button>
                 </div>
-                {{calculateCollar()}}
             </div>
         </div>
+        <!-- {{calculateSize()}} -->
     </div>
 </body>
 <script src="index.js"></script>
