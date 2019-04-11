@@ -135,6 +135,11 @@
   animation: pulse 2s infinite;
 }
 
+.product-details .active:hover {
+  border: 1px solid red;
+
+}
+
 @keyframes pulse{
    0% { box-shadow: 0 0 0 0px #f78c9f; }
    70% { box-shadow: 0 0 0 5px #ffc8d2; }
