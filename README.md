@@ -1,6 +1,6 @@
 # Dress Fit Recommendation with Fuzzy Logic
 
-After the user inputs the field values, the system stores the value and calculates the most appropriate fit for the user. Link to the project  [here!](https://shahrukh.dev/fuzzy-logic/#/)
+After the user inputs the field values, the system stores the value and calculates the most appropriate fit for the user. Link to the live version [here!](https://shahrukh.dev/fuzzy-logic/#/)
 
 
 ## Project setup
