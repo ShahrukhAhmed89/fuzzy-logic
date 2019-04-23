@@ -1,0 +1,97 @@
+.catalogue-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.catalogue-total{
+	text-align: center;
+	padding-bottom:1rem;
+	font-size: 0.85rem;
+}
+.catalogue{
+	display: grid;
+}
+.catalogue-display h1{
+	font-size:1.3rem;
+}
+.catalogue > div{
+    margin: 0 0 5px;
+    position: relative;
+    font-size: initial;
+    line-height: normal;
+}
+.catalogue .product img{
+	border: 1px solid #eee;
+}
+.catalogue .product-price{
+	font-size: 0.9rem;
+	font-weight: bold;
+	color: #40403f;
+	padding-top:.5rem;
+}
+.catalogue .product-name{
+	font-size:0.9rem;
+	font-weight: 500;
+	color: #151514;
+	margin-top: 0.5rem;
+}
+.catalogue .product-price:before{
+	content: '₹ ';
+
+}
+
+@media only screen and (max-width: 768px){
+	.catalogue-type{
+		display: none
+	}
+	.catalogue-wrapper{
+		padding: 1rem;
+	}
+	.catalogue{
+		grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+		grid-gap:.5rem;
+	}
+	.catalogue-display h1{
+		text-align: center;
+	}
+}
+
+@media only screen and (min-width: 768px){
+	.catalogue-wrapper{
+		padding:2rem;
+	}
+	.catalogue-type{
+		width: 15%;
+		position: -webkit-sticky;
+		position: sticky;
+		align-self: flex-start;
+		top: 20px;
+	}
+	.catalogue-type h2{
+		font-size:1.1rem;
+	}
+	.catalogue-type ul li{
+		width: 100%;
+		border-bottom: 1px solid #e1e1e1;
+		text-transform: uppercase;
+		font-weight: 500;
+		font-size:0.8rem;
+		cursor: pointer;
+	}
+	.catalogue-type ul li a{
+		padding:.8rem .5rem;
+		display: block;
+	
+	}
+	.catalogue-display{
+		width: 80%;
+	}
+	.catalogue-type ul li:hover{
+		background:#f3f3f3;
+	}
+	.catalogue{
+		grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+		grid-gap:1.5rem;
+	}
+}
