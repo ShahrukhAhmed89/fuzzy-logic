@@ -1,4 +1,7 @@
-# Recommend Dress Size to the user using user inputs and Fuzzy Logic.
+# Dress Fit Recommendation with Fuzzy Logic
+
+After the user inputs the field values, the system stores the value and calculates the most appropriate fit for the user. 
+
 
 ## Project setup
 ```
