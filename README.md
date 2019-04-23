@@ -1,4 +1,4 @@
-# my-fuzzy-logic
+# Recommend Dress Size to the user using user inputs and Fuzzy Logic.
 
 ## Project setup
 ```
