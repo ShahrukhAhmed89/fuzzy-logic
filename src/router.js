@@ -9,6 +9,9 @@ Vue.use(Router);
 
 export default new Router({
   // mode: 'history',
+  // scrollBehavior() {
+  //   return { x: 0, y: 0 };
+  // },
   base: process.env.BASE_URL,
   routes: [
     {
@@ -31,7 +34,5 @@ export default new Router({
       // component: () => import(/* webpackChunkName: "about" */ './views/Product.vue'),
     },
   ],
-  scrollBehavior() {
-    return { x: 0, y: 0 };
-  },
+
 });
